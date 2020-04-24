@@ -120,23 +120,23 @@ The following changes were made:
   1. The FC layers were removed. They were replaced with two layers. One having 470 neurons and other 2 (the output layer).
   2. The training of the convolution layers (feature layers) was set to OFF. Only the final 2 FC layers were fine-tuned.
   
-  The trained model can be found at models/resnet18/exp1/vgg16_2FC.pth
+  The trained model can be found at models/Resnet18/exp1/vgg16_2FC.pth
   
   The training and validation accuracies and loss are given as:
   
-  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp1/acc_loss.png)
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/Resnet18/exp1/acc_loss.png)
   
   The training confusion matrix is given below:
   
-  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp1/cm_train.png)
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/Resnet18/exp1/cm_train.png)
   
   The validation confusion matrix is given below:
   
-  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp1/cm_val.png)
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/Resnet18/exp1/cm_val.png)
   
   The testing confusion matrix is given below:
   
-  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp1/cm_test.png)
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/Resnet18/exp1/cm_test.png)
   
 
 ## Experiment 2
@@ -145,22 +145,22 @@ The following changes were made:
   1. The FC layers were removed. They were replaced with two layers. One having 470 neurons and other 2 (the output layer).
   2. The training of the convolution layers (feature layers) except the last layer (group of further convolutional layers) was set to OFF. So, last convolutional layer and the final 2 FC layers were fine-tuned.
   
-  The trained model can be found at models/resnet18/exp2/vgg16_1C_2FC.pth
+  The trained model can be found at models/Resnet18/exp2/vgg16_1C_2FC.pth
   
   The training and validation accuracies and loss are given as:
-  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp2/acc_loss.png)
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/Resnet18/exp2/acc_loss.png)
   
   The training confusion matrix is given below:
   
-  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp2/cm_train.png)
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/Resnet18/exp2/cm_train.png)
   
   The validation confusion matrix is given below:
   
-  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp2/cm_val.png)
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/Resnet18/exp2/cm_val.png)
   
   The testing confusion matrix is given below:
   
-  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp2/cm_test.png)
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/Resnet18/exp2/cm_test.png)
   
 
 
@@ -170,22 +170,22 @@ The following changes were made:
   1. The FC layers were removed. They were replaced with two layers. One having 470 neurons and other 2 (the output layer).
   2. The training of the convolution layers (feature layers) except the last 3 layers (each layer is a group of further convolutional layers) was set to OFF. So, last 3 convolutional layers and the final 2 FC layers were fine-tuned.
   
-  The trained model can be found at models/resnet18/exp3/vgg16_6C_2FC.pth
+  The trained model can be found at models/Resnet18/exp3/vgg16_6C_2FC.pth
   
   The training and validation accuracies and loss are given as:
-  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp3/acc_loss.png)
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/Resnet18/exp3/acc_loss.png)
   
   The training confusion matrix is given below:
   
-  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp3/cm_train.png)
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/Resnet18/exp3/cm_train.png)
   
   The validation confusion matrix is given below:
   
-  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp3/cm_val.png)
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/Resnet18/exp3/cm_val.png)
   
   The testing confusion matrix is given below:
   
-  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp3/cm_test.png)
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/Resnet18/exp3/cm_test.png)
   
 
 ## Experiment 4
@@ -194,20 +194,20 @@ The following changes were made:
   1. The FC layers were removed. They were replaced with two layers. One having 470 neurons and other 2 (the output layer).
   2. All of the network was fine-tuned.
   
-  The trained model can be found at models/resnet18/exp4/vgg16_AC_2FC.pth
+  The trained model can be found at models/Resnet18/exp4/vgg16_AC_2FC.pth
   
   The training and validation accuracies and loss are given as:
   
-  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp4/acc_loss.png)
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/Resnet18/exp4/acc_loss.png)
   
   The training confusion matrix is given below:
   
-  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp4/cm_train.png)
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/Resnet18/exp4/cm_train.png)
   
   The validation confusion matrix is given below:
   
-  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp4/cm_val.png)
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/Resnet18/exp4/cm_val.png)
   
   The testing confusion matrix is given below:
   
-  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp4/cm_test.png)
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/Resnet18/exp4/cm_test.png)
