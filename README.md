@@ -18,7 +18,9 @@ The following changes were made:
   1. The FC layers were removed. They were replaced with two layers. One having 470 neurons and other 2 (the output layer).
   2. The training of the convolution layers (feature layers) was set to OFF. Only the final 2 layers were trained.
   
-  The trained model can be found at models/vgg16/vgg16_2FC.pth
+  The trained model can be found at models/vgg16/exp1/vgg16_2FC.pth
+  
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/vgg16/exp1/acc_loss.png)
 
 ## Experiment 2
 
