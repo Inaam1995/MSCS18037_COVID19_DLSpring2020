@@ -33,3 +33,9 @@ The pretrained version of Resnet18 on Imagenet dataset was used.
 The following two changes were made:
   1. The FC layers were removed. They were replaced with two layers. One having 470 neurons and other 2 (the output layer).
   2. The training of the convolution layers (feature layers) was set to OFF. Only the final 2 layers were trained.
+
+## Experiment 2
+
+## Experiment 3
+
+## Experiment 4
