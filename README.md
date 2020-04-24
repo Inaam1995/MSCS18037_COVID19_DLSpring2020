@@ -24,12 +24,15 @@ The following changes were made:
   ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/vgg16/exp1/acc_loss.png)
   
   The training confusion matrix is given below:
+  
   ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/vgg16/exp1/cm_train.png)
   
   The validation confusion matrix is given below:
+  
   ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/vgg16/exp1/cm_val.png)
   
   The testing confusion matrix is given below:
+  
   ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/vgg16/exp1/cm_test.png)
   
 
