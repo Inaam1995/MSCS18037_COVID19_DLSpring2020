@@ -10,14 +10,14 @@ The dataset used is a binary dataset containing 2 classes: "Infected" and "Norma
 The dataset can be found by following the below link:
 https://drive.google.com/a/itu.edu.pk/uc?id=1-HQQciKYfwAO3oH7ci6zhg45DduvkpnK
 
-# VGG16
+# VGG-16
 The pretrained version of VGG16 on Imagenet dataset was used.
 
 ## Experiment 1
 
 The following changes were made:
   1. The FC layers were removed. They were replaced with two layers. One having 470 neurons and other 2 (the output layer).
-  2. The training of the convolution layers (feature layers) was set to OFF. Only the final 2 FC layers were trained.
+  2. The training of the convolution layers (feature layers) was set to OFF. Only the final 2 FC layers were fine-tuned.
   
   The trained model can be found at models/vgg16/exp1/vgg16_2FC.pth
   
@@ -42,7 +42,7 @@ The following changes were made:
 
 The following changes were made:
   1. The FC layers were removed. They were replaced with two layers. One having 470 neurons and other 2 (the output layer).
-  2. The training of the convolution layers (feature layers) except the last convolution layer was set to OFF. So, last convolutional layer and the final 2 FC layers were trained.
+  2. The training of the convolution layers (feature layers) except the last convolution layer was set to OFF. So, last convolutional layer and the final 2 FC layers were fine-tuned.
   
   The trained model can be found at models/vgg16/exp2/vgg16_1C_2FC.pth
   
@@ -67,7 +67,7 @@ The following changes were made:
 
 The following changes were made:
   1. The FC layers were removed. They were replaced with two layers. One having 470 neurons and other 2 (the output layer).
-  2. The training of the convolution layers (feature layers) except the last 6 convolution layer was set to OFF. So, last 6 convolutional layers and the final 2 FC layers were trained.
+  2. The training of the convolution layers (feature layers) except the last 6 convolution layer was set to OFF. So, last 6 convolutional layers and the final 2 FC layers were fine-tuned.
   
   The trained model can be found at models/vgg16/exp3/vgg16_6C_2FC.pth
   
@@ -111,16 +111,103 @@ The following changes were made:
   
   ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/vgg16/exp4/cm_test.png)
   
-# Resnet18
+# Resnet-18
 The pretrained version of Resnet18 on Imagenet dataset was used.
 
 ## Experiment 1
-The following two changes were made:
+
+The following changes were made:
   1. The FC layers were removed. They were replaced with two layers. One having 470 neurons and other 2 (the output layer).
-  2. The training of the convolution layers (feature layers) was set to OFF. Only the final 2 layers were trained.
+  2. The training of the convolution layers (feature layers) was set to OFF. Only the final 2 FC layers were fine-tuned.
+  
+  The trained model can be found at models/resnet18/exp1/vgg16_2FC.pth
+  
+  The training and validation accuracies and loss are given as:
+  
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp1/acc_loss.png)
+  
+  The training confusion matrix is given below:
+  
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp1/cm_train.png)
+  
+  The validation confusion matrix is given below:
+  
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp1/cm_val.png)
+  
+  The testing confusion matrix is given below:
+  
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp1/cm_test.png)
+  
 
 ## Experiment 2
 
+The following changes were made:
+  1. The FC layers were removed. They were replaced with two layers. One having 470 neurons and other 2 (the output layer).
+  2. The training of the convolution layers (feature layers) except the last layer (group of further convolutional layers) was set to OFF. So, last convolutional layer and the final 2 FC layers were fine-tuned.
+  
+  The trained model can be found at models/resnet18/exp2/vgg16_1C_2FC.pth
+  
+  The training and validation accuracies and loss are given as:
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp2/acc_loss.png)
+  
+  The training confusion matrix is given below:
+  
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp2/cm_train.png)
+  
+  The validation confusion matrix is given below:
+  
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp2/cm_val.png)
+  
+  The testing confusion matrix is given below:
+  
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp2/cm_test.png)
+  
+
+
 ## Experiment 3
 
+The following changes were made:
+  1. The FC layers were removed. They were replaced with two layers. One having 470 neurons and other 2 (the output layer).
+  2. The training of the convolution layers (feature layers) except the last 3 layers (each layer is a group of further convolutional layers) was set to OFF. So, last 3 convolutional layers and the final 2 FC layers were fine-tuned.
+  
+  The trained model can be found at models/resnet18/exp3/vgg16_6C_2FC.pth
+  
+  The training and validation accuracies and loss are given as:
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp3/acc_loss.png)
+  
+  The training confusion matrix is given below:
+  
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp3/cm_train.png)
+  
+  The validation confusion matrix is given below:
+  
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp3/cm_val.png)
+  
+  The testing confusion matrix is given below:
+  
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp3/cm_test.png)
+  
+
 ## Experiment 4
+
+The following changes were made:
+  1. The FC layers were removed. They were replaced with two layers. One having 470 neurons and other 2 (the output layer).
+  2. All of the network was fine-tuned.
+  
+  The trained model can be found at models/resnet18/exp4/vgg16_AC_2FC.pth
+  
+  The training and validation accuracies and loss are given as:
+  
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp4/acc_loss.png)
+  
+  The training confusion matrix is given below:
+  
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp4/cm_train.png)
+  
+  The validation confusion matrix is given below:
+  
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp4/cm_val.png)
+  
+  The testing confusion matrix is given below:
+  
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/resnet18/exp4/cm_test.png)
