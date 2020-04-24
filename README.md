@@ -20,7 +20,18 @@ The following changes were made:
   
   The trained model can be found at models/vgg16/exp1/vgg16_2FC.pth
   
+  The training and validation accuracies and loss are given as:
   ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/vgg16/exp1/acc_loss.png)
+  
+  The training confusion matrix is given below:
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/vgg16/exp1/cm_train.png)
+  
+  The validation confusion matrix is given below:
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/vgg16/exp1/cm_val.png)
+  
+  The testing confusion matrix is given below:
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/vgg16/exp1/cm_test.png)
+  
 
 ## Experiment 2
 
