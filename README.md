@@ -15,7 +15,7 @@ https://drive.google.com/a/itu.edu.pk/uc?id=1-HQQciKYfwAO3oH7ci6zhg45DduvkpnK
 The dataset can be found by following the below link:
 https://drive.google.com/file/d/1eytbwaLQBv12psV8I-aMkIli9N3bf8nO/view?usp=sharing
 
-# VGG-16
+# VGG-16 (Normal)
 The pretrained version of VGG16 on Imagenet dataset was used.
 
 ## Experiment 1
@@ -116,7 +116,7 @@ The following changes were made:
   
   ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/vgg16/exp4/cm_test.png)
   
-# Resnet-18
+# Resnet-18 (Normal)
 The pretrained version of Resnet18 on Imagenet dataset was used.
 
 ## Experiment 1
@@ -216,3 +216,18 @@ The following changes were made:
   The testing confusion matrix is given below:
   
   ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/Resnet18/exp4/cm_test.png)
+
+# VGG16 (Testing the Effect of Focal Loss)
+
+## Experiment 1
+
+  In this experiment the pretrained VGG16 was taken and was fine-tuned end to end. Only the last layer was changed in order to predict 3 classes. This was taken as a multilabel classification. BCEWithLogitsLoss was used.
+
+  The trained model can be found at 
+
+  The training and validation accuracies and loss are given as:
+  
+  The training confusion matrix is given below:
+  
+  The validation confusion matrix is given below:
+  
