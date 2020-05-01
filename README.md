@@ -219,7 +219,7 @@ The following changes were made:
 
 # VGG16 (Testing the Effect of Focal Loss)
 
-## Experiment 1
+## Experiment 1 (End-to-End without Focal Loss)
 
   In this experiment the pretrained VGG16 was taken and was fine-tuned end to end. Only the last layer was changed in order to predict 3 classes. This was taken as a multilabel classification. BCEWithLogitsLoss was used.
 
@@ -231,3 +231,4 @@ The following changes were made:
   
   The validation confusion matrix is given below:
   
+## Experiment 2 (End-to-End with Focal Loss)
