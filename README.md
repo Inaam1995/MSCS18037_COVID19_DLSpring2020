@@ -7,8 +7,13 @@ The code was run on Google Colab using Pytorch.
 # Dataset
 The dataset used is a binary dataset containing 2 classes: "Infected" and "Normal". The infected class has images of chest X-rays of Pneumonia and Covid-19 infected people while the normal class has normal chest x-ray images.
 
+## Dataset No. 1
 The dataset can be found by following the below link:
 https://drive.google.com/a/itu.edu.pk/uc?id=1-HQQciKYfwAO3oH7ci6zhg45DduvkpnK
+
+## Dataset No. 2 (For testing the effect of focal loss)
+The dataset can be found by following the below link:
+https://drive.google.com/file/d/1eytbwaLQBv12psV8I-aMkIli9N3bf8nO/view?usp=sharing
 
 # VGG-16
 The pretrained version of VGG16 on Imagenet dataset was used.
