@@ -227,14 +227,31 @@ The following changes were made:
 
 The training and validation accuracies and loss are given as:
   
-  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/Resnet18/exp4/acc_loss.png)
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/upload/master/focal_loss_exps/vgg16/acc.png)
   
   The training confusion matrix is given below:
   
-  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/Resnet18/exp4/cm_train.png)
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/upload/master/focal_loss_exps/vgg16/cm_train.png)
   
   The validation confusion matrix is given below:
   
-  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/models/Resnet18/exp4/cm_val.png)
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/upload/master/focal_loss_exps/vgg16/cm_val.png)
   
 ## Experiment 2 (End-to-End with Focal Loss)
+
+In this experiment the pretrained VGG16 was taken and was fine-tuned end to end. Only the last layer was changed in order to predict 3 classes. This was taken as a multilabel classification. Focal Loss was used.
+
+  The trained model can be found at https://drive.google.com/open?id=1i25ZmybjtOLiWvRx636wkDZRT97Ev89a
+
+The training and validation accuracies and loss are given as:
+  
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/upload/master/focal_loss_exps/vgg16/acc.png)
+  
+  The training confusion matrix is given below:
+  
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/upload/master/focal_loss_exps/vgg16/cm_train.png)
+  
+  The validation confusion matrix is given below:
+  
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/upload/master/focal_loss_exps/vgg16/cm_val.png)
+  
