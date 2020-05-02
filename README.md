@@ -255,3 +255,40 @@ The training and validation accuracies and loss are given as:
   
   ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/focal_loss_exps/vgg16/focal_cm_val.png)
   
+# Resnet18 (Testing the Effect of Focal Loss)
+
+## Experiment 1 (End-to-End without Focal Loss)
+
+  In this experiment the pretrained Resnet18 was taken and was fine-tuned end to end. Only the last layer was changed in order to predict 3 classes. This was taken as a multilabel classification. BCEWithLogitsLoss was used.
+
+  The trained model can be found at https://drive.google.com/open?id=1i25ZmybjtOLiWvRx636wkDZRT97Ev89a
+
+The training and validation accuracies and loss are given as:
+  
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/focal_loss_exps/resnet18/acc.png)
+  
+  The training confusion matrix is given below:
+  
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/focal_loss_exps/resnet18/cm_train.png)
+  
+  The validation confusion matrix is given below:
+  
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/focal_loss_exps/resnet18/cm_val.png)
+  
+## Experiment 2 (End-to-End with Focal Loss)
+
+In this experiment the pretrained resnet18 was taken and was fine-tuned end to end. Only the last layer was changed in order to predict 3 classes. This was taken as a multilabel classification. Focal Loss was used.
+
+  The trained model can be found at https://drive.google.com/open?id=1i25ZmybjtOLiWvRx636wkDZRT97Ev89a
+
+The training and validation accuracies and loss are given as:
+  
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/focal_loss_exps/resnet18/focal_acc.png)
+  
+  The training confusion matrix is given below:
+  
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/focal_loss_exps/resnet18/focal_cm_train.png)
+  
+  The validation confusion matrix is given below:
+  
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/blob/master/focal_loss_exps/resnet18/focal_cm_val.png)
