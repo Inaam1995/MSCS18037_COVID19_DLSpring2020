@@ -245,13 +245,13 @@ In this experiment the pretrained VGG16 was taken and was fine-tuned end to end.
 
 The training and validation accuracies and loss are given as:
   
-  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/upload/master/focal_loss_exps/vgg16/acc.png)
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/upload/master/focal_loss_exps/vgg16/focal_acc.png)
   
   The training confusion matrix is given below:
   
-  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/upload/master/focal_loss_exps/vgg16/cm_train.png)
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/upload/master/focal_loss_exps/vgg16/focal_cm_train.png)
   
   The validation confusion matrix is given below:
   
-  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/upload/master/focal_loss_exps/vgg16/cm_val.png)
+  ![alt text](https://github.com/Inaam1995/MSCS18037_COVID19_DLSpring2020/upload/master/focal_loss_exps/vgg16/focal_cm_val.png)
   
